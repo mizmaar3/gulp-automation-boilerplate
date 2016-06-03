@@ -1,0 +1,19 @@
+{
+  "name": "search-img",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "author": "Usman",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-babel": "^6.1.2",
+    "gulp-concat": "^2.6.0",
+    "gulp-less": "^3.1.0",
+    "gulp-sourcemaps": "^1.6.0"
+  },
+  "scripts": {
+    "build": "gulp babelfy && gulp css && gulp watch",
+    "start": "http-server ./ -p 9800 --cors"
+  }
+}
