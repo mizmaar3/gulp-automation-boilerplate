@@ -1,11 +1,11 @@
 'use strict';
 
 var script1 = function script1() {
-  console.log('script1.jsx');
+  return 'script1.jsx triggered';
 };
 'use strict';
 
-var script1 = function script1() {
-  console.log('script2.jsx');
+var script2 = function script2() {
+  return 'script2.jsx triggered3';
 };
 //# sourceMappingURL=main.js.map

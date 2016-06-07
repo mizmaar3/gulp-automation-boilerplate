@@ -3,6 +3,7 @@ var babel = require('gulp-babel');
 var concat = require('gulp-concat');
 var sourcemaps = require('gulp-sourcemaps');
 var less = require('gulp-less');
+var  browserSync = require('browser-sync').create();
 
 gulp.task('babelfy', function() {
   return gulp.src('js/*.*')
@@ -24,7 +25,15 @@ gulp.task('css', function() {
     .pipe(gulp.dest('dist'));
 });
 
-gulp.task('watch', function() {
-  gulp.watch('less/*.*', ['css']);
-  gulp.watch('js/*.*', ['babelfy']);
+gulp.task('watch', ['browserSync'], function() {
+  gulp.watch('less/*.*', ['css', browserSync.reload]);
+  gulp.watch('js/*.*', ['babelfy', browserSync.reload]);
+});
+
+gulp.task('browserSync', function() {
+  browserSync.init({
+    server: {
+      proxy: "localhost:9800"
+    }
+  });
 });

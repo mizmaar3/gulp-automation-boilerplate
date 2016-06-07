@@ -1,6 +1,17 @@
 <html>
-<head></head>
+<head>
+<script src="dist/main.js" ></script>
+<link rel="stylesheet" href="dist/style.css">
+</head>
 <body>
-  Test
+  <script>
+    var div1 = document.createElement('div');
+    div1.innerHTML = script1();
+    document.body.appendChild(div1);
+
+    var div2 = document.createElement('div');
+    div2.innerHTML = script2();
+    document.body.appendChild(div2);
+  </script>
 </body>
 </html>
