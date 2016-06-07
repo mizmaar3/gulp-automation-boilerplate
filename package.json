@@ -12,7 +12,8 @@
     "gulp-babel": "^6.1.2",
     "gulp-concat": "^2.6.0",
     "gulp-less": "^3.1.0",
-    "gulp-sourcemaps": "^1.6.0"
+    "gulp-sourcemaps": "^1.6.0",
+    "gulp-uglify": "^1.5.3"
   },
   "scripts": {
     "build": "gulp babelfy && gulp css && gulp watch",

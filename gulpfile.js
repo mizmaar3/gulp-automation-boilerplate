@@ -3,7 +3,8 @@ var babel = require('gulp-babel');
 var concat = require('gulp-concat');
 var sourcemaps = require('gulp-sourcemaps');
 var less = require('gulp-less');
-var  browserSync = require('browser-sync').create();
+var browserSync = require('browser-sync').create();
+var uglify = require('gulp-uglify');
 
 gulp.task('babelfy', function() {
   return gulp.src('js/*.*')
@@ -12,6 +13,7 @@ gulp.task('babelfy', function() {
       presets: ['es2016']
     }))
     .pipe(concat('main.js'))
+    .pipe(uglify())
     .pipe(sourcemaps.write('.'))
     .pipe(gulp.dest('dist'));
 });
