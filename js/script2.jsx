@@ -1,3 +1,3 @@
 var script2 = () => {
-  return 'script2.jsx triggered3';
+  return 'script2.jsx triggered';
 }
