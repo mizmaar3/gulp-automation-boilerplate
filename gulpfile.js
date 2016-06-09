@@ -6,6 +6,13 @@ var less = require('gulp-less');
 var browserSync = require('browser-sync').create();
 var uglify = require('gulp-uglify');
 
+
+/**
+* Task to Babelfy ES6 code
+* Concat all js into main.js
+* Compress and Uglify js
+* save main.js to dist folder
+**/
 gulp.task('babelfy', function() {
   return gulp.src('js/*.*')
     .pipe(sourcemaps.init())
@@ -18,6 +25,12 @@ gulp.task('babelfy', function() {
     .pipe(gulp.dest('dist'));
 });
 
+
+/**
+* Simple task compile .less files
+* Concatinate all styles into style.css
+* Save style.css into dist folder
+**/
 gulp.task('css', function() {
   return gulp.src('less/*.*')
     .pipe(sourcemaps.init())
@@ -27,11 +40,21 @@ gulp.task('css', function() {
     .pipe(gulp.dest('dist'));
 });
 
+
+/**
+* Watch all the changes in css and js folder
+* Reload browser when code changed
+**/
 gulp.task('watch', ['browserSync'], function() {
   gulp.watch('less/*.*', ['css', browserSync.reload]);
   gulp.watch('js/*.*', ['babelfy', browserSync.reload]);
 });
 
+
+/**
+* BrowserSync setup to reloads app page
+* each time browserSync.reload called in watch
+**/
 gulp.task('browserSync', function() {
   browserSync.init({
     server: {
