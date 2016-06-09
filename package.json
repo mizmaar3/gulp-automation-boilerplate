@@ -29,7 +29,7 @@
     "ES2016",
     "babel",
     "Automation"
-  ]
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/mizmaar3/gulp-automation-boilerplate.git"
