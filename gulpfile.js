@@ -45,8 +45,8 @@ gulp.task('css', function() {
 * Watch all the changes in css and js folder
 * Reload browser when code changed
 **/
-gulp.task('watch', ['browserSync'], function() {
-  gulp.watch('less/*.*', ['css', browserSync.reload]);
+gulp.task('watch', function() {
+  gulp.watch('less/*.*', ['css']);
   gulp.watch('js/*.*', ['babelfy', browserSync.reload]);
 });
 
