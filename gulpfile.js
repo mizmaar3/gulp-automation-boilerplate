@@ -54,6 +54,11 @@ gulp.task('watch', ['browserSync'], function() {
 /**
 * BrowserSync setup to reloads app page
 * each time browserSync.reload called in watch
+* NOT IN USE
+* if you want to use please run 'browserSync' before watch
+* i.e. gulp.task('watch', ['browserSync'], function() {
+* and browserSync.reload after css and babelfy
+* i.e gulp.watch('less/*.*', ['css', browserSync.reload]);
 **/
 gulp.task('browserSync', function() {
   browserSync.init({
@@ -62,3 +67,6 @@ gulp.task('browserSync', function() {
     }
   });
 });
+
+gulp.task('default', ['babelfy', 'css', 'watch']);
+gulp.task('build', ['babelfy', 'css', 'watch']);

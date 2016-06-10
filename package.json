@@ -1,7 +1,7 @@
 {
   "name": "gulp-automation-boilerplate",
   "version": "1.0.0",
-  "description": "Boilrplate to start with simple JS project with automation",
+  "description": "Boilerplate to start with simple JS project with automation",
   "main": "main.js",
   "author": {
     "name": "Usman",
@@ -9,8 +9,8 @@
     "url": "https://github.com/mizmaar3"
   },
   "scripts": {
-    "build": "gulp babelfy && gulp css && gulp watch",
-    "start": "http-server ./ -p 9800 --cors"
+    "build": "gulp build",
+    "start": "http-server ./ -p 9400 --cors"
   },
   "devDependencies": {
     "babel-preset-es2016": "^6.0.11",
