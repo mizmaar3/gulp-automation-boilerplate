@@ -1,6 +1,6 @@
 # gulp-automation-boilerplate
 
-> Easy to start with...
+> Project tested with node v 6.2.2
 
 A very basic boilerplate to start your Javascript project ideally with [ES6](https://babeljs.io/docs/learn-es2015/) and [Less](http://lesscss.org/) css preprocessor.
 
@@ -19,7 +19,7 @@ $ cd your-project-name && npm install
 ```
 
 
-## Run
+## Build
 
 Run this command to build and bundle the project.
 
@@ -35,13 +35,14 @@ $ gulp
 
 inside your project folder
 
+
+## Start Server
+
 To start local server please run
 
 ```bash
 $ npm run start
 ```
-
-*Note: Project tested with node v 6.2.2
 
 
 ## DevTools
