@@ -44,6 +44,8 @@ To start local server please run
 $ npm run start
 ```
 
+and goto http://127.0.0.1:9400 to test if code worked. You should get some text on the page.
+
 
 ## DevTools
 
@@ -52,3 +54,12 @@ $ npm run start
 - OS X: <kbd>Cmd</kbd> <kbd>Alt</kbd> <kbd>I</kbd> or <kbd>F12</kbd>
 - Linux: <kbd>Ctrl</kbd> <kbd>Shift</kbd> <kbd>I</kbd> or <kbd>F12</kbd>
 - Windows: <kbd>Ctrl</kbd> <kbd>Shift</kbd> <kbd>I</kbd> or <kbd>F12</kbd>
+
+
+## Explanation
+
+#### The JS folder
+
+- JS folder contains two js files `script1.jsx` which has an `ES6` arrow function and `script2.js` which have simple javascript function. Both will be compiled with `Babel.js` using `ES2015` presents and minified in single `main.js` file inside `dist` folder after building the project.
+
+- Less folder contains `.less` files which will be compiled with `gulp-less` and concatenated into single file `style.css`, can be found in `dist` folder after building project.
