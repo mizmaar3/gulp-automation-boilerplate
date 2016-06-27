@@ -17,7 +17,7 @@ gulp.task('babelfy', function() {
   return gulp.src('js/*.*')
     .pipe(sourcemaps.init())
     .pipe(babel({
-      presets: ['es2016']
+      presets: ['es2015']
     }))
     .pipe(concat('main.js'))
     .pipe(uglify())
