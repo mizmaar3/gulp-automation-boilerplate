@@ -4,6 +4,11 @@
 
 A very basic boilerplate to start your Javascript project ideally with [ES6](https://babeljs.io/docs/learn-es2015/) and [Less](http://lesscss.org/) css preprocessor.
 
+- The aim of this package is to start basic web project which usually have JS and css (less css) files, build them for release by compiling ES2015 code and concatenate js and css files into single bundle.
+
+- Bundling done with simple commands using [Gulp](http://gulpjs.com/) which is famous build system to automate build process.
+
+
 ## Install
 
 First, clone the repo via git:
@@ -56,7 +61,7 @@ and goto http://127.0.0.1:9400 to test if code worked. You should get some text 
 - Windows: <kbd>Ctrl</kbd> <kbd>Shift</kbd> <kbd>I</kbd> or <kbd>F12</kbd>
 
 
-## Explanation
+## Example Code Explanation
 
 #### The JS folder
 

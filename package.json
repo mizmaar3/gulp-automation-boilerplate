@@ -1,6 +1,6 @@
 {
   "name": "gulp-automation-boilerplate",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Boilerplate to start with simple JS project with automation",
   "main": "main.js",
   "author": {
