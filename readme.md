@@ -62,4 +62,7 @@ and goto http://127.0.0.1:9400 to test if code worked. You should get some text 
 
 - JS folder contains two js files `script1.jsx` which has an `ES6` arrow function and `script2.js` which have simple javascript function. Both will be compiled with `Babel.js` using `ES2015` presents and minified in single `main.js` file inside `dist` folder after building the project.
 
+
+#### The LESS folder
+
 - Less folder contains `.less` files which will be compiled with `gulp-less` and concatenated into single file `style.css`, can be found in `dist` folder after building project.
